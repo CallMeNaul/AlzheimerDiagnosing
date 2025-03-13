@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Đăng nhập</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/6BBRJdKb/binary-Brain.png">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <input class="checkbox hidden" type="checkbox" id="reg-log" name="reg-log" />
+    
+    <div class="header">
+        <div class="vertical-text">
+            <img src="https://i.postimg.cc/rwYz5RK5/binary-Brain.png" class="left-image">
+            <div class="text-container">
+                <p>AlzD</p>
+                <p>Diagnosing</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-3d-wrap">
+        <div class="card-3d-wrapper">
+            <div id="loginForm" class="login_page">
+                <div class="login_container">
+                    <div class="login_left">
+                        <section>
+                            <div class="box">
+                                <div class="square" style="--i:0;"></div>
+                                <div class="square" style="--i:1;"></div>
+                                <div class="square" style="--i:2;"></div>
+                                <div class="square" style="--i:3;"></div>
+                                <div class="square" style="--i:4;"></div>
+                            </div>
+                        </section>
+                        <div class="login_login">Đăng Nhập</div>
+                        <div class="login_eula">Chào mừng trở lại!</div>
+                        <div class="login_eula">Hãy đăng nhập để xem lại nội dung.</div>
+                        <div id="first_login" class="login_eula">
+                            Chưa có tài khoản? <span class="toggle-link" onclick="tickCheckbox()">Đăng ký</span>
+                        </div>
+                        <div>
+                            <ul class="dot-string">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="login_right">
+                        <div class="login_form">
+                            <label for="email">Email</label>
+                            <input type="login_email" id="email" required>
+                            <label for="password">Mật khẩu</label>
+                            <div class="password-container">
+                                <input type="password" id="login_password" required>
+                                <button class="toggle-password" id="toggle-password-login">👁️</button>
+                            </div>
+                            <button type="submit" id="login_submit" class="submit" value="Submit">Gửi</button>
+                        </div>
+                        <div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="registerForm" class="register_page">
+                <div class="login_container">
+
+                    <div class="login_right">
+                        <div class="register_form">
+                            <label for="email">Email</label>
+                            <input type="email" id="register_email" required>
+                            <label for="password">Mật khẩu</label>
+                            <div class="password-container">
+                                <input type="password" id="register_password" required>
+                                <button class="toggle-password" id="toggle-password-register">👁️</button>
+                            </div>
+                            <label for="password">Nhập lại mật khẩu</label>
+                            <div class="password-container">
+                                <input type="password" id="register_reenter_password" required>
+                                <button class="toggle-password" id="toggle-password-reenter">👁️</button>
+                            </div>
+                            <button type="submit" id="register_submit" class="submit" value="Submit">Gửi</button>
+                        </div>
+                        <div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    
+                    <div class="register_right">
+                        <section>
+                            <div class="box">
+                                <div class="square" style="--i:0;"></div>
+                                <div class="square" style="--i:1;"></div>
+                                <div class="square" style="--i:2;"></div>
+                                <div class="square" style="--i:3;"></div>
+                                <div class="square" style="--i:4;"></div>
+                            </div>
+                        </section>
+                        <div class="login_login">Đăng Ký</div>
+                        <div class="login_eula">Chào mừng bạn đến với trang Web.</div>
+                        <div class="login_eula">Hãy đăng ký để theo dõi nội dung.</div>
+                        <div class="login_eula">
+                            Đã có tài khoản? <span class="toggle-link" onclick="tickCheckbox()">Đăng nhập</span>
+                        </div>
+                        <div>
+                            <ul class="dot-string">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/account_script.js"></script>
+    <script type="module" src="js/auth.js"></script>
+</body>
+
+</html>
