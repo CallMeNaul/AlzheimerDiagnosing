@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chẩn đoán bệnh Alzheimer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/6BBRJdKb/binary-Brain.png">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <div class="vertical-text">
+            <img id="imgSymbol" src="https://i.postimg.cc/rwYz5RK5/binary-Brain.png" class="left-image">
+            <div class="text-container">
+                <p>AlzD</p>
+                <p>Diagnosing</p>
+            </div>
+            <div id="login-register-bar" class="loginAndLogOutButton">
+                <button class="btn" id="loginButton">Đăng Nhập</button>
+                <button class="btn" id="registerButton">Đăng Ký</button>
+            </div>
+            <div id="avatar" class="loginAndLogOutButton" style="display: none;"></div>
+        </div>
+    </div>
+    <div id="dropdown" style="display: none;">
+        <label id="userEmailLabel"></label> <!-- Email sẽ được cập nhật động -->
+        <button id="logoutButton">Đăng xuất</button>
+    </div>
+    <div id="body-part" class="body_part">
+        <div class="nav">
+            <h2>Thanh điều hướng</h2>
+            <a href="#" class="nav-item" data-content="Đây là trang chủ">Trang chủ</a>
+            <a href="#" class="nav-item" data-content="Đây là trang giới thiệu về chúng tôi">Giới thiệu</a>
+            <a href="#" class="nav-item" data-content="Dịch vụ của chúng tôi bao gồm ...">Dịch vụ</a>
+            <a href="#" class="nav-item" data-content="Bạn có thể liên hệ với chúng tôi qua ...">Liên hệ</a>
+            <a href="#" class="nav-item" data-content="Cập nhật tin tức mới nhất tại đây">Tin tức</a>
+        </div>
+        <div class="content">
+            <h1 id="main-title">Chào mừng đến với trang web của tôi</h1>
+            <p id="main-text">Đây là nội dung chính của trang web. Bạn có thể tìm thấy thêm thông tin ở thanh điều hướng
+                bên trái.</p>
+
+        </div>
+    </div>
+
+    <!-- <div class="wave"></div> -->
+    <script src="js/script.js"></script>
+    <script type="module" src="js/loadAvatar.js"></script>
+
+</body>
+
+</html>
